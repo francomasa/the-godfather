@@ -9,9 +9,6 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <h1>
-                <img class="header__logo" src="./dist/images/the_godfather_transparent.webp" alt="Disney+" />
-            </h1>
             <ul class="header__links">
                 <li class="header__links__item">
                     <a href="#" class="button button--secundary">Assitir agora</a>
@@ -37,11 +34,26 @@
             
             <ul class="rating__list">
                 <li class="rating__list__item">
-                    <img src="./dist/images/icones/star.svg" alt="Star" />
-                    <img src="./dist/images/icones/star.svg" alt="Star" />
-                    <img src="./dist/images/icones/star.svg" alt="Star" />
-                    <img src="./dist/images/icones/star.svg" alt="Star" />
-                    <img src="./dist/images/icones/star.svg" alt="Star" />
+                    <picture>
+                        <source srcset="./dist/images/icones/star-small.svg" alt="Star" media="(max-width: 768px)" />
+                        <img src="./dist/images/icones/star.svg" alt="Star" />
+                    </picture>
+                    <picture>
+                        <source srcset="./dist/images/icones/star-small.svg" alt="Star" media="(max-width: 768px)" />
+                        <img src="./dist/images/icones/star.svg" alt="Star" />
+                    </picture>
+                    <picture>
+                        <source srcset="./dist/images/icones/star-small.svg" alt="Star" media="(max-width: 768px)" />
+                        <img src="./dist/images/icones/star.svg" alt="Star" />
+                    </picture>
+                    <picture>
+                        <source srcset="./dist/images/icones/star-small.svg" alt="Star" media="(max-width: 768px)" />
+                        <img src="./dist/images/icones/star.svg" alt="Star" />
+                    </picture>
+                    <picture>
+                        <source srcset="./dist/images/icones/star-small.svg" alt="Star" media="(max-width: 768px)" />
+                        <img src="./dist/images/icones/star.svg" alt="Star" />
+                    </picture>
                     <span class="text">24,549</span>
                 </li>
                 <li class="rating__list__item"><span class="text">IMDb 9.2</span></li>
@@ -192,15 +204,8 @@
                 <li class="footer__links__item">
                     <a href="#" class="text--small">Ajuda</a>
                 </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Sobre o Disney+</a>
-                </li>
             </ul>
-            <p class="text--small">© 2025 Disney e suas empresas afiliadas. Todos os direitos reservados.</p>
-            <p class="text--small">
-                A programação do conteúdo esportivo varia de acordo com o plano. Para usar o Disney+, é necessário ser assinante e ter mais de 18 anos de idade. Conteúdo sujeito a disponibilidade.
-                O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
-            </p>
+            <p class="text--small">© 2025 Paramount Picture e suas empresas afiliadas. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="./dist/js/main.js"></script>
