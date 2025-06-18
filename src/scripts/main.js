@@ -36,18 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    //section FAQ, accordion
-    for (let i = 0; i < questions.length; i++) {
-        questions[i].addEventListener('click', abreOuFechaResposta);
-    }
-
-    function abreOuFechaResposta(elemento) {
-        const classe = 'faq__questions__item--is-open';
-        const elementoPai = elemento.target.parentNode;
-
-        elementoPai.classList.toggle(classe);
-    }
-
     //comportamento do header
     function ocultaElementosDoHeader(){
         const header = document.querySelector('header');
