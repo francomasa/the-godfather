@@ -24,7 +24,7 @@ function images() {
 
 
 
-exports.default = gulp.parallel(styles, scripts);
+exports.default = gulp.parallel(styles, images, scripts);
 
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
