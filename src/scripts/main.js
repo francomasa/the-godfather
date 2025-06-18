@@ -7,12 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', function(){
         const posicaoAtual = window.scrollY;
-        
+        const logo = document.querySelector('.header__logo');
+
         if(posicaoAtual < alturaHweo){
             ocultaElementosDoHeader();
+            logo.classList.add('hidden');
         }
         else {
             exibeElementosDoHeader();
+            logo.classList.remove('hidden');
+            
+        }
+        if(posicaoAtual == 0 ){
+            exibeElementosDoHeader();
+            logo.classList.remove('hidden');
         }
     })
 
@@ -40,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         elementoPai.classList.toggle(classe);
     }
 
-
+    //comportamento do header
     function ocultaElementosDoHeader(){
         const header = document.querySelector('header');
         header.classList.add('header--is-hidden');
@@ -51,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         header.classList.remove('header--is-hidden');
     }
 
+    //comportamento dos tabs
     function removeBotaoAtivo() {
         const buttons = document.querySelectorAll('[data-tab-button]');
         for(let i = 0; i < buttons.length; i++) {

@@ -14,10 +14,7 @@
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secundary">Assine agora</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#" class="button button--dark">Entrar</a>
+                    <a href="#" class="button button--secundary">Assitir agora</a>
                 </li>
             </ul>
         </div>
@@ -31,71 +28,142 @@
                     <img src="./dist/images/the_godfather_transparent.webp" alt="The Gogfather" />
                 </picture>
             </h1>
-            <h3 class="title--small">
-                As melhores histórios em um só Lugar.
+            <h3 class="text--big">
+                OSCARS® 3X winner
             </h3>
-            <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
-                <br />
-                <span class="text">
-                    R$ 27,90/mês o R$ 279,99/ano à vista
-                </span>
+            <p class="text">                    
+                A chilling portrait of the Corleone family's rise and near fall from power in America along with balancing the story of the Sicilian clan's ugly crime business in which they are engaged.
             </p>
+            
+            <ul class="rating__list">
+                <li class="rating__list__item">
+                    <img src="./dist/images/icones/star.svg" alt="Star" />
+                    <img src="./dist/images/icones/star.svg" alt="Star" />
+                    <img src="./dist/images/icones/star.svg" alt="Star" />
+                    <img src="./dist/images/icones/star.svg" alt="Star" />
+                    <img src="./dist/images/icones/star.svg" alt="Star" />
+                    <span class="text">24,549</span>
+                </li>
+                <li class="rating__list__item"><span class="text">IMDb 9.2</span></li>
+                <li class="rating__list__item"><span class="text">2 h 49 min</span></li>
+                <li class="rating__list__item"><span class="text">1972</span></li>
+            </ul>
+
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+" />
                     <button class="button">Rent  HD $3,79</button>
-                    <span class="text">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Disney+ - StarPlay" />
                     <button class="button">Buy Movie $4,99</button>
-                    <span class="text">R$ 55,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__more">
+                    <button class="button"><img src="./dist/images/icones/share.svg" alt="Compartilhar" /></button>
+                </li>
+                <li class="hero__content__combos__more">
+                    <button class="button"><img src="./dist/images/icones/plus-circle.svg" alt="Agregar aos favoritos" /></button>
+                </li>
+                <li class="hero__content__combos__more">
+                    <button class="button"><img src="./dist/images/icones/heart.svg" alt="Curtir" /></button>
                 </li>
             </ul>
             <p class="text--small">
-                O preço pode variar caso a assinatura seja feita através de outras plataformas.
+                The price before discount is the median price for the last 90 days. Rentals include 30 days to start watching this video and 48 hours to finish once started. Limited time offer. Terms apply.
             </p>
         </div>
     </section>
 
     <section class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="em-breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Em breve
+            <button data-tab-button="explore" class="shows__tabs__button shows__tabs__button--is-active">
+                Explore
             </button>
-            <button data-tab-button="mais-populares" class="shows__tabs__button">
-                Mais Populares
+            <button data-tab-button="store" class="shows__tabs__button">
+                Store
             </button>
-            <button data-tab-button="mais-no-star-plus" class="shows__tabs__button">
-                Mais no Star+
+            <button data-tab-button="details" class="shows__tabs__button">
+                Details
             </button>
         </nav>
-        <ul data-tab-id="em-breve" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="././dist/images/em_breve/spidey.jpg" alt="Spiday" />
-            </li>
-            <li class="shows__list__item">
-                <img src="././dist/images/em_breve/desencantada.jpg" alt="Desencantada" />
-            </li>
-            <li class="shows__list__item">
-                <img src="././dist/images/em_breve/lobisomem.jpg" alt="Lobisomem" />
-            </li>
-            <li class="shows__list__item">
-                <img src="././dist/images/em_breve/sem_limites.jpg" alt="Sem limites" />
-            </li>
-            <li class="shows__list__item">
-                <img src="././dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses" />
-            </li>
-            <li class="shows__list__item">
-                <img src="././dist/images/em_breve/willow.jpg" alt="Willow" />
-            </li>
-        </ul>
+        <div class="shows__container">
+            <div data-tab-id="explore" class="shows__list shows__list--is-active">
+                <div class="image-text-section__text_container">
+                    <h2 class="title--big">Exploring The Godfather</h2>
+                    <p class="title--small">
+                        A star-studded deep dive podcast
+                    </p>
+                    <button class="button">Listen</button>
+                </div>
+            </div>
+
+            <div data-tab-id="store" class="shows__list store">
+                <div class="image-text-section__text_container">
+                    <h2 class="title--big">Shop the Show</h2>
+                    <p class="title--small">
+                        Search 'Shop the Show' in the Amazon App
+                    </p>
+                    <button class="button">Shop now on Amazon</button>
+                </div>
+            </div>
+
+            <div data-tab-id="details" class="shows__list details">
+                <div class="image-text-section__text_container">
+                    <h2 class="title">More info</h2>
+                    <p>
+                        <span class="title--small">Content advisory</span>
+                        <p class="text">
+                            Flashing lights, nudity, violence, substance use, alcohol use, smoking, foul language, sexual content
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Audio languages</span>
+                        <p class="text">
+                            English, English [Audio Description], English Dialogue Boost: Medium, English Dialogue Boost: High
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Subtitles</span>
+                        <p class="text">
+                            English [CC]
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Directors</span>
+                        <p class="text">
+                            Francis Ford Copolla
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Producers</span>
+                        <p class="text">
+                            Albert S. Ruddy
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Cast</span>
+                        <p class="text">
+                            Al Pacino, Richard S. Castellano, Sterling Hayden, Marlon Brando, James Caan, Robert Duvall
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Studio</span>
+                        <p class="text">
+                            Paramount Internal ViacomCBS
+                        </p>
+                    </p>
+                    <p>
+                        <span class="title--small">Feedback</span>
+                        <p class="text">
+                            <button class="button">Send us feedback</button>
+                        </p>
+                    </p>                    
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+" />
+            <img class="footer__logo" src="./dist/images/the_godfather_transparent.webp" alt="Disney+" />
             <ul class="footer__links">
                 <li class="footer__links__item">
                     <div class="language-selector">
