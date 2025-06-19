@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .hero {
-    padding: 5.6vw;
+    padding: 10vw 5.6vw 0;
     min-height: 80vh;
     background-image: url('../images/foto-principal.webp');
     background-size: cover;
@@ -22,7 +22,8 @@
         background-repeat: no-repeat;
         background-position: top;
         margin-top: -80px;
-        padding-top: 40vh;
+        padding-top: 22vh;
+        min-height: 60vh;
     }
 
     .button {
@@ -30,13 +31,28 @@
         margin-bottom: 8px;
     }
 
+    &__buttons_container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: center;
+
+        @media (max-width: 768px){
+            display: block;
+        }
+    }
+
+
     &__content {
         max-width: 640px;
         text-align: left;
 
+        @media (max-width: 768px){
+            max-width: 100%;
+            padding-top: 80px;
+        }
+        
         @media ((min-width: 768px) and (max-width:1024px)){
             max-width: 100%;
-            display: flex;
         }
 
         img {
@@ -55,10 +71,10 @@
         }
 
         p {
-            margin-bottom: 20px;
+            margin: 24px 0;
 
             &:last-child {
-                margin: 0 60px;
+                margin: 24px;
             }
         }
 
@@ -70,6 +86,7 @@
             @media (max-width: 768px){
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
+                margin-bottom: 20px;
             }
             &__item{
                 display: flex;
@@ -101,10 +118,10 @@
 
         &__combos {
             display: flex;
-            justify-content: space-between;
 
             @media (max-width: 768px){
-                display: block;
+                display: flex;
+                justify-content: center;
             }
 
             &__combo {
@@ -113,7 +130,6 @@
 
                 @media (max-width: 768px){
                     width: 100%;
-                    margin-bottom: 24px;
                 }
 
                 img {
@@ -122,12 +138,14 @@
             }
 
             &__more {
-                width: 20%;
+                width: 33%;
                 margin: 0 5px;
 
                 @media (max-width: 768px){
                     width: 100%;
                     margin-bottom: 24px;
+                    display: flex;
+                    justify-content: center;
                 }
 
                 img {

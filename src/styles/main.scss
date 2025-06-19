@@ -113,6 +113,11 @@ body {
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
     cursor: pointer;
     
+    @media (max-width: 768px) {
+        width: auto;
+        height: auto;
+    }
+
     &:hover {
         background-color: rgba(variaveis.$corDeFundoBotaoSecundario, 0.8);
     }
@@ -157,11 +162,27 @@ body {
         padding: 5.6vw;
         width: 50%;
 
+        @media (max-width: 768px){
+            display: block;
+            width: 100%;
+            padding: 20px;
+        }
         h2 {
             margin-bottom: 24px;
+            @media (max-width: 768px){
+                margin-top: 140px;
+            }
         }
         p {
             margin-bottom: 24px;
+            @media (max-width: 768px){
+                font-size: 18px;
+            }
+        }
+        .button {
+            @media (max-width: 768px){
+                margin: 0 auto;
+            }
         }
     }
 
